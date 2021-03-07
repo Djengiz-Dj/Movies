@@ -1,0 +1,14 @@
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\bin\Debug\netcoreapp3.1\Movies.Repository.deps.json
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\bin\Debug\netcoreapp3.1\Movies.Repository.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\bin\Debug\netcoreapp3.1\Movies.Repository.pdb
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\bin\Debug\netcoreapp3.1\Movies.Data.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\bin\Debug\netcoreapp3.1\Movies.Entities.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\bin\Debug\netcoreapp3.1\Movies.Data.pdb
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\bin\Debug\netcoreapp3.1\Movies.Entities.pdb
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\obj\Debug\netcoreapp3.1\Movies.Repository.csprojAssemblyReference.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\obj\Debug\netcoreapp3.1\Movies.Repository.AssemblyInfoInputs.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\obj\Debug\netcoreapp3.1\Movies.Repository.AssemblyInfo.cs
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\obj\Debug\netcoreapp3.1\Movies.Repository.csproj.CoreCompileInputs.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\obj\Debug\netcoreapp3.1\Movies.Repository.csproj.CopyComplete
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\obj\Debug\netcoreapp3.1\Movies.Repository.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Repository\obj\Debug\netcoreapp3.1\Movies.Repository.pdb

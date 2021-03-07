@@ -1,0 +1,133 @@
+﻿@model Movies.Entities.Movie
+
+
+@{ 
+    ViewData["Title"] = "Details";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="text-center text-capitalize">Movie Details</h1>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="col-md-6">
+       @Html.DisplayFor(model => model.Title)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Country)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Country)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Language)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Language)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.DateOfRelease)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.DateOfRelease)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Production)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Production)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Category)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Category)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.MovieType)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.MovieType)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Duration)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Duration)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Subtitles)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Subtitles)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Starring)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Starring)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Directore)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Directore)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.Rating)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.Rating)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.AgeRestriction)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.AgeRestriction)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        @Html.DisplayNameFor(model => model.FilmingLocations)
+    </div>
+    <div class="col-md-6">
+        @Html.DisplayFor(model => model.FilmingLocations)
+    </div>
+</div>
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <button class="btn btn-primary w-100">Create</button>
+            || <a asp-action="index">Back to Movie List</a>
+        </div>
+    </div>

@@ -1,0 +1,12 @@
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\bin\Debug\netcoreapp3.1\Movies.Data.deps.json
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\bin\Debug\netcoreapp3.1\Movies.Data.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\bin\Debug\netcoreapp3.1\Movies.Data.pdb
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\bin\Debug\netcoreapp3.1\Movies.Entities.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\bin\Debug\netcoreapp3.1\Movies.Entities.pdb
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\obj\Debug\netcoreapp3.1\Movies.Data.csprojAssemblyReference.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\obj\Debug\netcoreapp3.1\Movies.Data.AssemblyInfoInputs.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\obj\Debug\netcoreapp3.1\Movies.Data.AssemblyInfo.cs
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\obj\Debug\netcoreapp3.1\Movies.Data.csproj.CoreCompileInputs.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\obj\Debug\netcoreapp3.1\Movies.Data.csproj.CopyComplete
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\obj\Debug\netcoreapp3.1\Movies.Data.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Data\obj\Debug\netcoreapp3.1\Movies.Data.pdb

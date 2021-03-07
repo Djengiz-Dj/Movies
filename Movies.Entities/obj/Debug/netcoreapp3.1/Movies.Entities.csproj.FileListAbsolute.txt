@@ -1,0 +1,9 @@
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\bin\Debug\netcoreapp3.1\Movies.Entities.deps.json
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\bin\Debug\netcoreapp3.1\Movies.Entities.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\bin\Debug\netcoreapp3.1\Movies.Entities.pdb
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\obj\Debug\netcoreapp3.1\Movies.Entities.csprojAssemblyReference.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\obj\Debug\netcoreapp3.1\Movies.Entities.AssemblyInfoInputs.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\obj\Debug\netcoreapp3.1\Movies.Entities.AssemblyInfo.cs
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\obj\Debug\netcoreapp3.1\Movies.Entities.csproj.CoreCompileInputs.cache
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\obj\Debug\netcoreapp3.1\Movies.Entities.dll
+C:\Users\lido\Desktop\.Net(Core)\Movies\Movies.Entities\obj\Debug\netcoreapp3.1\Movies.Entities.pdb

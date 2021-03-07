@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies", "Movies\Movies.csproj", "{F755518C-17FB-40BA-AE16-A3A12440FCC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24FEE34E-BC75-49EB-AB67-9BB500A2C65B} = {24FEE34E-BC75-49EB-AB67-9BB500A2C65B}
+		{7745A28F-3239-4909-A2AA-5F2E7A1FD040} = {7745A28F-3239-4909-A2AA-5F2E7A1FD040}
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96} = {CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}
+		{8B01D5DF-D7E7-4EE1-84B1-C18CAA4FB913} = {8B01D5DF-D7E7-4EE1-84B1-C18CAA4FB913}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Data", "Movies.Data\Movies.Data.csproj", "{7745A28F-3239-4909-A2AA-5F2E7A1FD040}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96} = {CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Repository", "Movies.Repository\Movies.Repository.csproj", "{24FEE34E-BC75-49EB-AB67-9BB500A2C65B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7745A28F-3239-4909-A2AA-5F2E7A1FD040} = {7745A28F-3239-4909-A2AA-5F2E7A1FD040}
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96} = {CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Entities", "Movies.Entities\Movies.Entities.csproj", "{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Movies.Services", "Movies.Services\Movies.Services.csproj", "{8B01D5DF-D7E7-4EE1-84B1-C18CAA4FB913}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24FEE34E-BC75-49EB-AB67-9BB500A2C65B} = {24FEE34E-BC75-49EB-AB67-9BB500A2C65B}
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96} = {CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F755518C-17FB-40BA-AE16-A3A12440FCC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F755518C-17FB-40BA-AE16-A3A12440FCC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F755518C-17FB-40BA-AE16-A3A12440FCC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F755518C-17FB-40BA-AE16-A3A12440FCC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7745A28F-3239-4909-A2AA-5F2E7A1FD040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7745A28F-3239-4909-A2AA-5F2E7A1FD040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7745A28F-3239-4909-A2AA-5F2E7A1FD040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7745A28F-3239-4909-A2AA-5F2E7A1FD040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FEE34E-BC75-49EB-AB67-9BB500A2C65B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FEE34E-BC75-49EB-AB67-9BB500A2C65B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FEE34E-BC75-49EB-AB67-9BB500A2C65B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FEE34E-BC75-49EB-AB67-9BB500A2C65B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3591CC-7BD8-4E0C-9D6F-0706DF2BBF96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B01D5DF-D7E7-4EE1-84B1-C18CAA4FB913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B01D5DF-D7E7-4EE1-84B1-C18CAA4FB913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B01D5DF-D7E7-4EE1-84B1-C18CAA4FB913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B01D5DF-D7E7-4EE1-84B1-C18CAA4FB913}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA29B6F3-9FA9-46F7-AE03-B001CCC8B83B}
+	EndGlobalSection
+EndGlobal
