@@ -11,7 +11,7 @@ namespace Movies.Repository.Interfaces
         void EditActor(Actor actor);
         void DeleteActor(int actorId);
 
-        Actor GetActorById(int actorId);
+        Actor GetActorById(int id);
 
         IEnumerable<Actor> GetAllActors();
     }

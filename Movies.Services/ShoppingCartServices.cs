@@ -9,11 +9,14 @@ namespace Movies.Services
     public class ShoppingCartServices : IShoppingCartServices
     {
         private readonly IShoppingCartRepository _shoppingCartRepository;
-        
+        private readonly IMovieRepository _movieRepository;
 
-        public ShoppingCartServices(IShoppingCartRepository shoppingCartRepository)
+        public ShoppingCartServices(
+            IShoppingCartRepository shoppingCartRepository,
+            IMovieRepository movieRepository)
         {
             _shoppingCartRepository = shoppingCartRepository;
+            _movieRepository = movieRepository;
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Movies.Repository.Interfaces
         void EditProduction(Production production);
         void DeleteProduction(int productionId);
 
-        Production GetProductionById(int productionId);
+        Production GetProductionById(int id);
 
         IEnumerable<Production> GetAllProductions();
     }

@@ -12,19 +12,21 @@ namespace Movies.Data
     {
         public DataContext(DbContextOptions options) : base(options)
         {
+
         }
+        // *** have to tell the datacontext class about our models ***
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Directore> Directores { get; set; }
-        public DbSet<Publisher> Publishers { get; set; }
         public DbSet<Production> Productions { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Actor> Actors { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
-        public DbSet<WishList> WishLists { get; set; }
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-        }
+
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    //sluzi na datacontext...za dataceeding
+        //    base.OnModelCreating(builder);
+        //}
     }
 }

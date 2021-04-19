@@ -16,17 +16,17 @@ namespace Movies.Services
             _directoreRepository = directoreRepository;
         }
 
-        public void AddDirectore(Directore directore)
+        public void Add(Directore directore)
         {
             _directoreRepository.AddDirectore(directore);
         }
 
-        public void DeleteDirectore(int directoreId)
+        public void Delete(int directoreId)
         {
             _directoreRepository.DeletDirectore(directoreId);
         }
 
-        public void EditDirectore(Directore directore)
+        public void Edit(Directore directore)
         {
             _directoreRepository.EditDirectore(directore);
         }
@@ -37,9 +37,9 @@ namespace Movies.Services
             return result;
         }
 
-        public Directore GetDirectoreById(int directoreId)
+        public Directore GetDirectoreById(int id)
         {
-            var result = _directoreRepository.GetDirectoreById(directoreId);
+            var result = _directoreRepository.GetDirectoreById(id);
             return result;
         }
     }

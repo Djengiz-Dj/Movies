@@ -7,12 +7,12 @@ namespace Movies.Services.Interfaces
 {
     public interface IProductionServices
     {
-        void AddProduction(Production production);
-        void EditProduction(Production production);
-        void DeleteProduction(int productionId);
+        void Add(Production production);
+        void Edit(Production production);
+        void Delete(int productionId);
 
 
-        Production GetProductionById(int productionId);
+        Production GetProductionById(int id);
         IEnumerable<Production> GetAllProduction();
     }
 }

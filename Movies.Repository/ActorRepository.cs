@@ -36,9 +36,9 @@ namespace Movies.Repository
             _context.SaveChanges();
         }
 
-        public Actor GetActorById(int actorId)
+        public Actor GetActorById(int id)
         {
-            var result = _context.Actors.FirstOrDefault(x=> x.Id == actorId);
+            var result = _context.Actors.FirstOrDefault(x=> x.Id == id);
             return result;
         }
 

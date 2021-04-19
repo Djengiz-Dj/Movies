@@ -1,26 +1,80 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<h1>Movie</h1>
-<div class="row">
-    <div class="col-md-12 p-3">
-        <a class="btn btn-success float-right" asp-action="Create">Create</a>
+﻿@model IEnumerable<Movies.Entities.Movie>
+
+<div class="container-fluid">
+
+    <h1 class="text-center text-capitalize">All Movies</h1>
+
+    <div class="row">
+        <div class="col-md-6 p-3 mx-auto">
+            <a class="btn btn-success btn-block" asp-action="Create">
+                <i class="fas fa-plus-circle"></i>&nbsp;&nbsp; Create
+            </a>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12 p-3">
-        <a class="btn btn-danger float-right" asp-action="Delete">Delete</a>
+   
+    <h3 class="text-center text-capitalize">Movie</h3>
+    <table>
+        <thead class="thead-light">
+            <tr>
+                <th>Title</th>
+                <th>Production</th>
+                <th>Category</th>
+                <th>Starring</th>
+                <th>Director</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem  => movie.Title)
+                    </td>
+                    <td>
+                        <a href="#">@Html.DisplayFor(modelItem => movie.Production)</a>
+                    </td>
+                    <td>
+                        <a href="#"> @Html.DisplayFor(modelItem => movie.Category)</a>
+</td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.Starring)
+                    </td>
+                    <td>
+                        <a href="#"> @Html.DisplayFor(modelItem => movie.Directore)</a>
+</td>
+                    <td>
+                        <a class="btn btn-info float-right" asp-action="Edit" asp-route-id="@movie.Id">
+                            <i class="fas fa-edit"></i>&nbsp;&nbsp;Edit
+                        </a>
+                        <a class="btn btn-primary float-right" asp-action="Details" asp-route-id="@movie.Id">
+                            <i class="fas fa-info-circle"></i>&nbsp;&nbsp;Details
+                        </a>
+                        <a class="btn btn-danger btn-block" asp-action="Delete" asp-route-id="@movie.Id">
+                            <i class="fas fa-trash-o"></i>&nbsp;&nbsp;Delete
+                        </a>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+
+    <div class="row">
+        <div class="col-md-12 p-3">
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12 p-3">
-        <a class="btn btn-info float-right" asp-action="Edit">Edit</a>
+    <div class="row">
+        <div class="col-md-12 p-3">
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12 p-3">
-        <a class="btn btn-primary float-right" asp-action="Details">Details</a>
+    <div class="row">
+        <div class="col-md-12 p-3">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 p-3">
+        </div>
     </div>
 </div>

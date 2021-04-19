@@ -7,11 +7,11 @@ namespace Movies.Services.Interfaces
 {
     public interface ICategoryServices
     {
-        void AddCategory(Category category);
-        void EditCategory(Category category);
-        void DeleteCategory(int categoryId);
+        void Add(Category category);
+        void Edit(Category category);
+        void Delete(int categoryId);
 
-        Category GetCategoryById(int categoryId);
+        Category GetCategoryById(int id);
 
         IEnumerable<Category> GetAllCategories();
     }

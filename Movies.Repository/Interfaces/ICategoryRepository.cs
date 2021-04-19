@@ -11,7 +11,7 @@ namespace Movies.Repository.Interfaces
         void EditCategory(Category category);
         void DeleteCategory(int categoryId);
 
-        Category GetCategoryById(int categoryId);
+        Category GetCategoryById(int id);
 
         IEnumerable<Category> GetAllCategories();
     }

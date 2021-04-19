@@ -42,9 +42,9 @@ namespace Movies.Repository
             return result;
         }
 
-        public Category GetCategoryById(int categoryId)
+        public Category GetCategoryById(int id)
         {
-            var result = _context.Categories.FirstOrDefault(x => x.Id == categoryId);
+            var result = _context.Categories.FirstOrDefault(x => x.Id == id);
             return result;
         }
     }

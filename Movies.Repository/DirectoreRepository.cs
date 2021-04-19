@@ -42,9 +42,9 @@ namespace Movies.Repository
             return result;
         }
 
-        public Directore GetDirectoreById(int directoreId)
+        public Directore GetDirectoreById(int id)
         {
-            var result = _context.Directores.FirstOrDefault(x => x.Id == directoreId);
+            var result = _context.Directores.FirstOrDefault(x => x.Id == id);
             return result;
         }
     }

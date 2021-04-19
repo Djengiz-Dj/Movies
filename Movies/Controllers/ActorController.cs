@@ -18,8 +18,14 @@ namespace Movies.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var allActors = _actorServices.GetAllActors();
+            return View(allActors);
         }
+        //[HttpPost]
+        //public JsonResult CreateActorAJAX(Actor actor)
+        //{
+
+        //}
     }
 }
 

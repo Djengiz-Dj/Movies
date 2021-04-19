@@ -16,6 +16,7 @@ namespace Movies.Entities
         public string MovieProduction { get; set; }
         public string MovieCategory { get; set; }
         public string MovieType { get; set; }
+        public string ShortMovieDescription{ get; set; }
         public string MovieDuration { get; set; }
         public string MovieSubtitles { get; set; }
         public string MovieStarring { get; set; }

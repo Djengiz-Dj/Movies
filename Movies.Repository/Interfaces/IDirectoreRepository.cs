@@ -13,7 +13,7 @@ namespace Movies.Repository.Interfaces
 
         IEnumerable<Directore> GetAllDirectores();
 
-        Directore GetDirectoreById(int directoreId);
+        Directore GetDirectoreById(int id);
 
     }
 }

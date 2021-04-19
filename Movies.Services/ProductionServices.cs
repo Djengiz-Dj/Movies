@@ -16,17 +16,17 @@ namespace Movies.Services
             _productionRepository = productionRepository;
         }
 
-        public void AddProduction(Production production)
+        public void Add(Production production)
         {
             _productionRepository.AddProduction(production);
         }
 
-        public void DeleteProduction(int productionId)
+        public void Delete(int productionId)
         {
             _productionRepository.DeleteProduction(productionId);
         }
 
-        public void EditProduction(Production production)
+        public void Edit(Production production)
         {
             _productionRepository.EditProduction(production);
         }
@@ -37,9 +37,9 @@ namespace Movies.Services
             return result;
         }
 
-        public Production GetProductionById(int productionId)
+        public Production GetProductionById(int id)
         {
-            var result = _productionRepository.GetProductionById(productionId);
+            var result = _productionRepository.GetProductionById(id);
             return result;
         }
     }

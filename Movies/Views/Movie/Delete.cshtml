@@ -4,132 +4,144 @@
     ViewData["Title"] = "Delete";
 
 }
-<div class="row">
-    <div class="col-md-12">
-        <h1 class="text-center text-capitalize"> Delete Movie</h1>
-        <h5>Are You Sure You want to delete details of the Movie or Movie itself ?</h5>
 
-    </div>
-</div>
-<hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-capitalize"> Delete Movie</h1>
+            <h5>!!! Are You Sure You want to delete Movie itself ? !!!</h5>
 
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Title)
+        </div>
     </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Title)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Country)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Country)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Language)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Language)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.DateOfRelease)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.DateOfRelease)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Production)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Production)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Category)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Category)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.MovieType)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.MovieType)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Duration)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Duration)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Subtitles)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Subtitles)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Starring)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Starring)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Directore)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Directore)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.Rating)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.Rating)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.AgeRestriction)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.AgeRestriction)
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-6">
-        @Html.DisplayNameFor(model => model.FilmingLocations)
-    </div>
-    <div class="col-md-6">
-        @Html.DisplayFor(model => model.FilmingLocations)
-    </div>
-</div>
+    <hr />
+    <table class="table table-bordered">
+        <tbody>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Title)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Country)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Country)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Language)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Language)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateOfRelease)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.DateOfRelease)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Production)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Production)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Category)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.MovieType)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.MovieType)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Duration)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Duration)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Subtitles)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Subtitles)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Starring)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Starring)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Directore)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Directore)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Rating)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.Rating)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.AgeRestriction)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.AgeRestriction)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmingLocations)
+                </th>
+                <td>
+                    @Html.DisplayFor(model => model.FilmingLocations)
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-<div class="row mt-3">
-    <div class="col-md-12">
-        <button class="btn btn-danger">Create</button>
-        || <a asp-action="index">Back to Movie List</a>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <button class="btn btn-danger">Delete</button>
+        </div>
+        <div>
+            <a asp-action="index">-- Back to Movie List --</a>
+        </div>
     </div>
+    @*<form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <input class="btn btn-danger" type="submit" value="Delete" />
+        || <a asp-action="index">Back to Book List</a>
+    </form>*@
 </div>
-

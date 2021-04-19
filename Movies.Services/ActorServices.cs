@@ -31,9 +31,9 @@ namespace Movies.Services
             _actorRepository.EditActor(actor);
         }
 
-        public Actor GetActorById(int actorId)
+        public Actor GetActorById(int id)
         {
-            var result = _actorRepository.GetActorById(actorId);
+            var result = _actorRepository.GetActorById(id);
             return result;
         }
 

@@ -10,14 +10,17 @@ namespace Movies.Entities
         [Key]
         public int Id { get; set; }
 
-        [StringLength(150)]
+        [StringLength(30)]
         public string Name { get; set; }
 
-        [StringLength(100)]
+        [StringLength(30)]
         public string Country { get; set; }
 
-        [StringLength(100)]
+        [StringLength(30)]
         public string Language { get; set; }
+        public DateTime DateBirth { get; set; }
+
+        public int MovieId { get; set; }
 
         public virtual ICollection<Movie> Movies { get; set; }
 

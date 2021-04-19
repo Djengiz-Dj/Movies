@@ -12,7 +12,7 @@ namespace Movies.Entities
         public string UserId { get; set; }
         public int MovieId { get; set; }
         public int CategoryId { get; set; }
-        public int PublisherId { get; set; }
+        public int ProductionId { get; set; }
         public DateTime DateAdded { get; set; }
 
     }

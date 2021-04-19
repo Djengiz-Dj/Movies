@@ -15,18 +15,18 @@ namespace Movies.Services
         {
             _categoryRepository = categoryRepository;
         }
-
-        public void AddCategory(Category category)
+              
+        public void Add(Category category)
         {
             _categoryRepository.AddCategory(category);
         }
-
-        public void DeleteCategory(int categoryId)
+         
+        public void Delete(int categoryId)
         {
             _categoryRepository.DeleteCategory(categoryId);
         }
-
-        public void EditCategory(Category category)
+        
+        public void Edit(Category category)
         {
             _categoryRepository.EditCategory(category);
         }
@@ -37,9 +37,9 @@ namespace Movies.Services
             return result;
         }
 
-        public Category GetCategoryById(int categoryId)
+        public Category GetCategoryById(int id)
         {
-            var result = _categoryRepository.GetCategoryById(categoryId);
+            var result = _categoryRepository.GetCategoryById(id);
             return result;
         }
     }

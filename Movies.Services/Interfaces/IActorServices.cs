@@ -11,7 +11,7 @@ namespace Movies.Services.Interfaces
         void Edit(Actor actor);
         void Delete(int actorId);
 
-        Actor GetActorById(int actorId);
+        Actor GetActorById(int id);
 
         IEnumerable<Actor> GetAllActors();
     }

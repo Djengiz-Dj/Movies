@@ -45,7 +45,6 @@ namespace Movies
             services.AddTransient<IMovieServices, MovieServices>();
             services.AddTransient<IOrderServices, OrderServices>();
             services.AddTransient<IProductionServices, ProductionServices>();
-            services.AddTransient<IPublisherServices, PublisherServices>();
             services.AddTransient<IShoppingCartServices, ShoppingCartServices>();
             services.AddTransient<IWishListServices, WishListServices>();
             services.AddTransient<IActorServices, ActorServices>();
@@ -56,7 +55,6 @@ namespace Movies
             services.AddTransient<IMovieRepository, MovieRepository>();
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddTransient<IProductionRepository, ProductionRepository>();
-            services.AddTransient<IPublisherRepository, PublisherRepository>();
             services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
             services.AddTransient<IWishListRepository, WishListRepository>();
             services.AddTransient<IActorRepository, ActorRepository>();

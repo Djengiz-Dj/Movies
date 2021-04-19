@@ -1,201 +1,192 @@
-﻿@model Movies.Entities.Movie
+﻿@model Movies.Models.MovieViewModel
 
-
-<div class="row">
-    <div class="col-md-12">
-        <h1 class="text-center text-capitalize">Create Movie</h1>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-capitalize">Create Movie</h1>
+        </div>
     </div>
+    <hr />
+    <form asp-action="Create" name="moviecreate" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <label asp-for="Title">Title</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Title" type="text" name="title" value="" />
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label asp-for="Country">Country</label>
+                <select class="form-control" asp-for="Country" type="text" name="Country" value="" id="country">
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="DirectorName">Director Name</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="DirectorName"  type="text" name="DirectorName" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="YearOfReleise">Years Of Release</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="YearOfReleise" type="date" name="YearsOfRelease" value="" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Duration">Duration</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Duration" type="text" name="Duration" value="" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="UserId">User Id</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="UserId" type="text" name="UserId" value="" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Genre">Genre</label>
+                <div class="input-group">
+                    <select class="form-control" asp-for="Genre" asp-items="ViewBag.Genre" type="text" name="Genre" value="" id="Genre"></select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="CategoryName">Category Name</label>
+                <div class="input-group">
+                    <select class="form-control" asp-for="CategoryName" asp-items="ViewBag.Genre" type="text" name="CategoryName" value=""></select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="CategoryId">Category Id</label>
+                <div class="input-group">
+                    <select class="form-control" asp-for="CategoryId" type="text" name="CategoryId" value="" id="CategoryId">
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Price">Price</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Price" type="text" name="Price" value="" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="ProductionHouse">Production</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Production" type="text" name="Production" value="" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="ProductionId">Production</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Production" type="text" name="Production" value="" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label asp-for="MovieType">Movie Type</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="MovieType" type="text" name="BookCoverType" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label asp-for="Description">Description</label>
+                <input class="form-control" asp-for="Description" type="text" name="Description" value="" id="Description" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="Language">Language</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Language" type="text" name="Language" value="" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Country">Country</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Country" type="text" name="Country" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+               
+            </div>
+            <div class="col-md-6">
+                <label asp-for="ScreenPlay">Screen Play</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="ScreenPlay" type="text" name="ScreenPlay" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="Weight">Weight</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Weight" type="text" name="Weight" value="" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="Copies">Copies</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Copies" type="text" name="Copies" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="Shipping">Shipping</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Shipping" type="text" name="Shipping" value="" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="SoldItems">Sold Items</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="SoldItems" type="text" name="SoldItems" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label asp-for="PhotoURL">PhotoURL</label>
+                <input class="form-control" asp-for="PhotoURL" type="text" name="PhotoURL" value="" id="PhotoURL" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label asp-for="Rating">Rating</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="Rating" type="text" name="Rating" value="" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label asp-for="DateAdded">Date Added</label>
+                <div class="input-group">
+                    <input class="form-control" asp-for="DateAdded" type="date" name="DateAdded" value="" />
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <input class="btn btn-success btn-block" value="Create" />
+            </div>
+            <div>
+                || <a asp-action="index">Back to Movie List</a>
+            </div>
+        </div>
+    </form>
 </div>
-<hr />
-<form asp-action="Create" method="post">
-    <div class="row">
-        <div class="col-md-12">
-            <label asp-for="Title">Title</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Title" type="text" name="title" value="" />
-            </div>
-        </div>
-        
-    </div>
-    <div class="row">
-        <div class="form-group col-md-6">
-            <label asp-for="Country">Country</label>
-            <select class="form-control" asp-for="Country" type="text" name="Country" value="" id="country">
-            </select>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="DirectorName">Director Name</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="DirectorName" type="text" name="DirectorName" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="YearOfReleise">Years Of Release</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="YearOfReleise" type="date" name="YearsOfRelease" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="Duration">Duration</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Duration" type="text" name="Duration" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="PublisherName">Publisher Name</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="PublisherName" type="text" name="PublisherName" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="PublisherId">Publisher Id</label>
-            <div class="input-group">
-                <select class="form-control" asp-for="PublisherId" type="text" name="PublisherId" value="" id="PublisherId">
-                </select>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="UserId">User Id</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="UserId" type="text" name="UserId" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="Genre">Genre</label>
-            <div class="input-group">
-                <select class="form-control" asp-for="Genre" asp-items="ViewBag.Genre" type="text" name="Genre" value="" id="Genre"></select>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="CategoryName">Category Name</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="CategoryName" type="text" name="CategoryName" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="CategoryId">Category Id</label>
-            <div class="input-group">
-                <select class="form-control" asp-for="CategoryId" type="text" name="CategoryId" value="" id="CategoryId">
-                </select>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <label asp-for="Price">Price</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Price" type="text" name="Price" value="" />
-            </div>
-        </div>
-        <div class="col-md-4">
-            <label asp-for="Production">Production</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Production" type="text" name="Production" value="" />
-            </div>
-        </div>
-        <div class="col-md-4">
-            <label asp-for="MovieType">Movie Type</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="MovieType" type="text" name="BookCoverType" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="form-group col-md-12">
-            <label asp-for="Description">Description</label>
-            <input class="form-control" asp-for="Description" type="text" name="Description" value="" id="Description" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="Language">Language</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Language" type="text" name="Language" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="Country">Country</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Country" type="text" name="Country" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="Edition">Edition</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Edition" type="text" name="Edition" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="ScreenPlay">Screen Play</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="ScreenPlay" type="text" name="ScreenPlay" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="Weight">Weight</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Weight" type="text" name="Weight" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="Copies">Copies</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Copies" type="text" name="Copies" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="Shipping">Shipping</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Shipping" type="text" name="Shipping" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="SoldItems">Sold Items</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="SoldItems" type="text" name="SoldItems" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="form-group col-md-12">
-            <label asp-for="PhotoURL">PhotoURL</label>
-            <input class="form-control" asp-for="PhotoURL" type="text" name="PhotoURL" value="" id="PhotoURL" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label asp-for="Rating">Rating</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="Rating" type="text" name="Rating" value="" />
-            </div>
-        </div>
-        <div class="col-md-6">
-            <label asp-for="DateAdded">Date Added</label>
-            <div class="input-group">
-                <input class="form-control" asp-for="DateAdded" type="date" name="DateAdded" value="" />
-            </div>
-        </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col-md-12">
-            <button class="btn btn-success w-100">Create</button>
-        </div>
-        <div>
-            || <a asp-action="index">Back to Movie List</a>
-        </div>
-    </div>
-</form>
