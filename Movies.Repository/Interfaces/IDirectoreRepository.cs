@@ -7,9 +7,9 @@ namespace Movies.Repository.Interfaces
 {
     public interface IDirectoreRepository
     {
-        void AddDirectore(Directore directore);
-        void EditDirectore(Directore directore);
-        void DeletDirectore(int directoreId);
+        void Add(Directore directore);
+        void Edit(Directore directore);
+        void Delete(int directoreId);
 
         IEnumerable<Directore> GetAllDirectores();
 

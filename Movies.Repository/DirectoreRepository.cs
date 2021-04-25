@@ -17,20 +17,20 @@ namespace Movies.Repository
             _context = context;
         }
 
-        public void AddDirectore(Directore directore)
+        public void Add(Directore directore)
         {
             _context.Directores.Add(directore);
             _context.SaveChanges();
         }
 
-        public void DeletDirectore(int directoreId)
+        public void Delete(int directoreId)
         {
             Directore directore = GetDirectoreById(directoreId);
             _context.Directores.Remove(directore);
             _context.SaveChanges();
         }
 
-        public void EditDirectore(Directore directore)
+        public void Edit(Directore directore)
         {
             _context.Directores.Update(directore);
             _context.SaveChanges();

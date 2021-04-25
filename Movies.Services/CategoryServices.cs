@@ -18,17 +18,17 @@ namespace Movies.Services
               
         public void Add(Category category)
         {
-            _categoryRepository.AddCategory(category);
+            _categoryRepository.Add(category);
         }
          
         public void Delete(int categoryId)
         {
-            _categoryRepository.DeleteCategory(categoryId);
+            _categoryRepository.Delete(categoryId);
         }
         
         public void Edit(Category category)
         {
-            _categoryRepository.EditCategory(category);
+            _categoryRepository.Edit(category);
         }
 
         public IEnumerable<Category> GetAllCategories()

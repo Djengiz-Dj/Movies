@@ -18,17 +18,17 @@ namespace Movies.Services
 
         public void Add(Production production)
         {
-            _productionRepository.AddProduction(production);
+            _productionRepository.Add(production);
         }
 
         public void Delete(int productionId)
         {
-            _productionRepository.DeleteProduction(productionId);
+            _productionRepository.Delete(productionId);
         }
 
         public void Edit(Production production)
         {
-            _productionRepository.EditProduction(production);
+            _productionRepository.Edit(production);
         }
 
         public IEnumerable<Production> GetAllProduction()

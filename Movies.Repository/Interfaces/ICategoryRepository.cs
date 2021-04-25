@@ -7,9 +7,9 @@ namespace Movies.Repository.Interfaces
 {
     public interface ICategoryRepository
     {
-        void AddCategory(Category category);
-        void EditCategory(Category category);
-        void DeleteCategory(int categoryId);
+        void Add(Category category);
+        void Edit(Category category);
+        void Delete(int categoryId);
 
         Category GetCategoryById(int id);
 

@@ -7,10 +7,10 @@ namespace Movies.Repository.Interfaces
 {
     public interface IMovieRepository
     {
-        void AddMovie(Movie movie);
-        void EditMovie(Movie movie);
-        void EditMovie(int id);
-        void DeleteMovie(int movieId);
+        void Add(Movie movie);
+        void Edit(Movie movie);
+        void Edit(int id);
+        void Delete(int movieId);
 
         Movie GetMovieById(int id);
 

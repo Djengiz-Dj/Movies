@@ -18,17 +18,17 @@ namespace Movies.Services
 
         public void Add(Actor actor)
         {
-            _actorRepository.AddActor(actor);
+            _actorRepository.Add(actor);
         }
 
         public void Delete(int actorId)
         {
-            _actorRepository.DeleteActor(actorId);
+            _actorRepository.Delete(actorId);
         }
 
         public void Edit(Actor actor)
         {
-            _actorRepository.EditActor(actor);
+            _actorRepository.Edit(actor);
         }
 
         public Actor GetActorById(int id)

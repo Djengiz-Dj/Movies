@@ -17,20 +17,20 @@ namespace Movies.Repository
             _context = context;
         }
 
-        public void AddCategory(Category category)
+        public void Add(Category category)
         {
             _context.Categories.Add(category);
             _context.SaveChanges();
         }
 
-        public void DeleteCategory(int categoryId)
+        public void Delete(int categoryId)
         {
             Category category = GetCategoryById(categoryId);
             _context.Categories.Remove(category);
             _context.SaveChanges();
         }
 
-        public void EditCategory(Category category)
+        public void Edit(Category category)
         {
             _context.Categories.Update(category);
             _context.SaveChanges();

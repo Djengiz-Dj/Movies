@@ -7,9 +7,9 @@ namespace Movies.Repository.Interfaces
 {
     public interface IActorRepository
     {
-        void AddActor(Actor actor);
-        void EditActor(Actor actor);
-        void DeleteActor(int actorId);
+        void Add(Actor actor);
+        void Edit(Actor actor);
+        void Delete(int actorId);
 
         Actor GetActorById(int id);
 

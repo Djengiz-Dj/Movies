@@ -18,17 +18,17 @@ namespace Movies.Services
 
         public void Add(Directore directore)
         {
-            _directoreRepository.AddDirectore(directore);
+            _directoreRepository.Add(directore);
         }
 
         public void Delete(int directoreId)
         {
-            _directoreRepository.DeletDirectore(directoreId);
+            _directoreRepository.Delete(directoreId);
         }
 
         public void Edit(Directore directore)
         {
-            _directoreRepository.EditDirectore(directore);
+            _directoreRepository.Edit(directore);
         }
 
         public IEnumerable<Directore> GetAllDirectores()

@@ -17,20 +17,20 @@ namespace Movies.Repository
             _context = context;
         }
 
-        public void AddActor(Actor actor)
+        public void Add(Actor actor)
         {
             _context.Actors.Add(actor);
             _context.SaveChanges();
         }
 
-        public void DeleteActor(int actorId)
+        public void Delete(int actorId)
         {
             Actor actor = GetActorById(actorId);
             _context.Actors.Remove(actor);
             _context.SaveChanges();
         }
 
-        public void EditActor(Actor actor)
+        public void Edit(Actor actor)
         {
             _context.Actors.Update(actor);
             _context.SaveChanges();

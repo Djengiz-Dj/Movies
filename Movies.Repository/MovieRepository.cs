@@ -18,32 +18,32 @@ namespace Movies.Repository
             _context = context;
         }
 
-        public void AddMovie(Movie movie)
+        public void Add(Movie movie)
         {
             _context.Movies.Add(movie);
             _context.SaveChanges();
 
         }
 
-        public void DeleteMovie(int movieId)
+        public void Delete(int movieId)
         {
             Movie movie = GetMovieById(movieId);
             _context.Movies.Remove(movie);
             _context.SaveChanges();
 
         }
-        public void DeleteMovie(Movie movie)
+        public void Delete(Movie movie)
         {
             _context.Movies.Remove(movie);
             _context.SaveChanges();
         }
 
-        public void EditMovie(Movie movie)
+        public void Edit(Movie movie)
         {
             _context.Movies.Update(movie);
             _context.SaveChanges();
         }
-        public void EditMovie(int id)
+        public void Edit(int id)
         {
             var movie = GetMovieById(id);
             _context.Movies.Update(movie);

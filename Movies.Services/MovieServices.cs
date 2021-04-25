@@ -19,21 +19,21 @@ namespace Movies.Services
 
         public void Add(Movie movie)
         {
-            _movieRepository.AddMovie(movie);
+            _movieRepository.Add(movie);
         }
 
         public void Delete(int movieId)
         {
-            _movieRepository.DeleteMovie(movieId);
+            _movieRepository.Delete(movieId);
         }
 
         public void Edit(Movie movie)
         {
-            _movieRepository.EditMovie(movie);
+            _movieRepository.Edit(movie);
         }
         public void Edit(int id)
         {
-            _movieRepository.EditMovie(id);
+            _movieRepository.Edit(id);
         }
 
 

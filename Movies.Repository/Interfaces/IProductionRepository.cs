@@ -7,9 +7,9 @@ namespace Movies.Repository.Interfaces
 {
     public interface IProductionRepository
     {
-        void AddProduction(Production production);
-        void EditProduction(Production production);
-        void DeleteProduction(int productionId);
+        void Add(Production production);
+        void Edit(Production production);
+        void Delete(int productionId);
 
         Production GetProductionById(int id);
 
